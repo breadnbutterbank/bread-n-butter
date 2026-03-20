@@ -32,14 +32,6 @@
       <button id="send-btn">Send</button>
     </div>
   </div>
-
-  <div class="bottom-nav">
-    <a href="index.html"><i class="fas fa-home"></i><br>Home</a>
-    <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i><br>Dashboard</a>
-    <a href="learn.html"><i class="fas fa-book-open"></i><br>Learn</a>
-    <a href="bread.html"><i class="fas fa-wallet"></i><br>Bread</a>
-    <a href="chat.html" class="active"><i class="fas fa-robot"></i><br>Jeff</a>
-    <a href="profile.html"><i class="fas fa-user"></i><br>Profile</a>
   </div>
 
 <script>
@@ -65,7 +57,7 @@
     setTimeout(() => {
       const jeffMsg = document.createElement('div');
       jeffMsg.classList.add('message', 'jeff');
-      jeffMsg.textContent = "I'm still learning! Thanks for your question: " + msg;
+      jeffMsg.textContent = "I'm so sorry! This is a demo. So I cannot answer your question. Try saying "How can I cut costs and still get coffee from Starbucks every morning?"";
       chatBox.appendChild(jeffMsg);
       chatBox.scrollTop = chatBox.scrollHeight;
     }, 1000);
