@@ -1,0 +1,210 @@
+/* General */
+body {
+  font-family: 'Georgia', serif;
+  background: #f6efe9;
+  margin: 0;
+  color: #2f2a26;
+}
+
+/* Layout */
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background: #f6efe9;
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e5dcd3;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.navbar h2 {
+  margin: 0 0 8px 0;
+  font-weight: normal;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2f2a26;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #dbc2a4;
+  color: #fff;
+}
+
+/* Bottom nav */
+.bottom-nav {
+  display: none; /* Hidden on desktop */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f6efe9;
+  border-top: 1px solid #e5dcd3;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  z-index: 100;
+}
+
+.bottom-nav a {
+  color: #2f2a26;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  flex-grow: 1;
+  transition: color 0.3s ease;
+}
+
+.bottom-nav a i {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.bottom-nav a.active,
+.bottom-nav a:hover {
+  color: #cfae8b;
+  font-weight: bold;
+}
+
+/* Show bottom nav on small screens */
+@media (max-width: 480px) {
+  .navbar .nav-links {
+    display: none; /* Hide top navbar links */
+  }
+  .bottom-nav {
+    display: flex;
+  }
+
+  .container {
+    margin-bottom: 60px; /* To avoid bottom nav overlap */
+  }
+}
+
+/* Headings */
+h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
+  color: #6b5f57;
+}
+
+/* Cards */
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px;
+  margin: 12px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 25px;
+  background: #dbc2a4;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #cfae8b;
+}
+
+/* Progress bar */
+.progress {
+  background: #eee;
+  border-radius: 10px;
+  height: 8px;
+  margin-top: 8px;
+}
+
+.progress-fill {
+  background: #dbc2a4;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Chat */
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.message {
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: 15px;
+  max-width: 75%;
+}
+
+.user {
+  background: #dbc2a4;
+  margin-left: auto;
+}
+
+.jeff {
+  background: #eee;
+  margin-right: auto;
+}
+
+.input-area {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+}
+
+.input-area button {
+  width: auto;
+  margin-left: 10px;
+}

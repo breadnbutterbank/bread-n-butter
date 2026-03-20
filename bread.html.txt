@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Bread - Bread N' Butter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>Bread N' Butter</h2>
+    <div class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+      <a href="learn.html"><i class="fas fa-book-open"></i> Learn</a>
+      <a href="bread.html" class="active"><i class="fas fa-wallet"></i> Bread</a>
+      <a href="chat.html"><i class="fas fa-robot"></i> Jeff</a>
+      <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Your Bread</h1>
+
+    <div class="card">
+      <h3>Italy Trip ✈️</h3>
+      <p>$760 / $1,000</p>
+      <div class="progress">
+        <div class="progress-fill" style="width: 76%;"></div>
+      </div>
+      <small>Tips to reach your goal</small>
+    </div>
+
+    <div class="card">
+      <h3>Emergency Fund</h3>
+      <div class="progress">
+        <div class="progress-fill" style="width: 100%;"></div>
+      </div>
+      <p>$300 / $300</p>
+    </div>
+
+    <div class="card">
+      <h3>Budget</h3>
+      <p><strong>Currently spent</strong> $986</p>
+      <p><em>Limit for this month: $800</em></p>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html"><i class="fas fa-home"></i><br>Home</a>
+    <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i><br>Dashboard</a>
+    <a href="learn.html"><i class="fas fa-book-open"></i><br>Learn</a>
+    <a href="bread.html" class="active"><i class="fas fa-wallet"></i><br>Bread</a>
+    <a href="chat.html"><i class="fas fa-robot"></i><br>Jeff</a>
+    <a href="profile.html"><i class="fas fa-user"></i><br>Profile</a>
+  </div>
+
+</body>
+</html>

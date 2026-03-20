@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Learn - Bread N' Butter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>Bread N' Butter</h2>
+    <div class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+      <a href="learn.html" class="active"><i class="fas fa-book-open"></i> Learn</a>
+      <a href="bread.html"><i class="fas fa-wallet"></i> Bread</a>
+      <a href="chat.html"><i class="fas fa-robot"></i> Jeff</a>
+      <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Learn</h1>
+    <p>Level up your financial knowledge 📈</p>
+
+    <div class="card">
+      <h3>Budgeting Basics</h3>
+      <p>Learn how to track your spending and save smarter.</p>
+    </div>
+
+    <div class="card">
+      <h3>Saving Money</h3>
+      <p>Tips to grow your money over time.</p>
+    </div>
+
+    <div class="card">
+      <h3>Credit & Debt</h3>
+      <p>Understand how credit works and avoid common traps.</p>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html"><i class="fas fa-home"></i><br>Home</a>
+    <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i><br>Dashboard</a>
+    <a href="learn.html" class="active"><i class="fas fa-book-open"></i><br>Learn</a>
+    <a href="bread.html"><i class="fas fa-wallet"></i><br>Bread</a>
+    <a href="chat.html"><i class="fas fa-robot"></i><br>Jeff</a>
+    <a href="profile.html"><i class="fas fa-user"></i><br>Profile</a>
+  </div>
+
+</body>
+</html>

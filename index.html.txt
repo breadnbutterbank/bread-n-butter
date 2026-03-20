@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home - Bread N' Butter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>Bread N' Butter</h2>
+    <div class="nav-links">
+      <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+      <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+      <a href="learn.html"><i class="fas fa-book-open"></i> Learn</a>
+      <a href="bread.html"><i class="fas fa-wallet"></i> Bread</a>
+      <a href="chat.html"><i class="fas fa-robot"></i> Jeff</a>
+      <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Welcome to Bread N' Butter</h1>
+    <p>Watch your dough rise, not your stress.<br/>Bread N' Butter helps you budget, learn, and hit goals — without feeling judged.</p>
+    <button onclick="alert('Start your financial journey!')">Take a small quiz to get started!</button>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html" class="active"><i class="fas fa-home"></i><br>Home</a>
+    <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i><br>Dashboard</a>
+    <a href="learn.html"><i class="fas fa-book-open"></i><br>Learn</a>
+    <a href="bread.html"><i class="fas fa-wallet"></i><br>Bread</a>
+    <a href="chat.html"><i class="fas fa-robot"></i><br>Jeff</a>
+    <a href="profile.html"><i class="fas fa-user"></i><br>Profile</a>
+  </div>
+
+</body>
+</html>

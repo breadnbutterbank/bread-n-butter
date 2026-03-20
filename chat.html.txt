@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jeff Chat - Bread N' Butter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>Bread N' Butter</h2>
+    <div class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+      <a href="learn.html"><i class="fas fa-book-open"></i> Learn</a>
+      <a href="bread.html"><i class="fas fa-wallet"></i> Bread</a>
+      <a href="chat.html" class="active"><i class="fas fa-robot"></i> Jeff</a>
+      <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Talk to Jeff</h1>
+
+    <div class="chat-box" id="chat-box">
+      <div class="message jeff">Hi, I'm Jeff! Ask me anything about your finances.</div>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Type a message..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html"><i class="fas fa-home"></i><br>Home</a>
+    <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i><br>Dashboard</a>
+    <a href="learn.html"><i class="fas fa-book-open"></i><br>Learn</a>
+    <a href="bread.html"><i class="fas fa-wallet"></i><br>Bread</a>
+    <a href="chat.html" class="active"><i class="fas fa-robot"></i><br>Jeff</a>
+    <a href="profile.html"><i class="fas fa-user"></i><br>Profile</a>
+  </div>
+
+<script>
+  // Simple chat simulation
+  const chatBox = document.getElementById('chat-box');
+  const userInput = document.getElementById('user-input');
+  const sendBtn = document.getElementById('send-btn');
+
+  sendBtn.addEventListener('click', () => {
+    const msg = userInput.value.trim();
+    if (!msg) return;
+
+    // Add user message
+    const userMsg = document.createElement('div');
+    userMsg.classList.add('message', 'user');
+    userMsg.textContent = msg;
+    chatBox.appendChild(userMsg);
+
+    userInput.value = '';
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+    // Fake Jeff response
+    setTimeout(() => {
+      const jeffMsg = document.createElement('div');
+      jeffMsg.classList.add('message', 'jeff');
+      jeffMsg.textContent = "I'm still learning! Thanks for your question: " + msg;
+      chatBox.appendChild(jeffMsg);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }, 1000);
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile - Bread N' Butter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>Bread N' Butter</h2>
+    <div class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+      <a href="learn.html"><i class="fas fa-book-open"></i> Learn</a>
+      <a href="bread.html"><i class="fas fa-wallet"></i> Bread</a>
+      <a href="chat.html"><i class="fas fa-robot"></i> Jeff</a>
+      <a href="profile.html" class="active"><i class="fas fa-user"></i> Profile</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Your Profile</h1>
+    <p>Manage your account and personalize Jeff.</p>
+
+    <div class="card">
+      <h3>Personalization</h3>
+      <p>Edit your name, bio, and Jeff’s personality.</p>
+      <button onclick="alert('Personalization coming soon!')">Customize Jeff</button>
+    </div>
+
+    <div class="card">
+      <h3>Accounts & Payments</h3>
+      <p>Link your bank accounts and manage payment cycles.</p>
+      <button onclick="alert('Bank integration coming soon!')">Manage Accounts</button>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="index.html"><i class="fas fa-home"></i><br>Home</a>
+    <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i><br>Dashboard</a>
+    <a href="learn.html"><i class="fas fa-book-open"></i><br>Learn</a>
+    <a href="bread.html"><i class="fas fa-wallet"></i><br>Bread</a>
+    <a href="chat.html"><i class="fas fa-robot"></i><br>Jeff</a>
+    <a href="profile.html" class="active"><i class="fas fa-user"></i><br>Profile</a>
+  </div>
+
+</body>
+</html>
