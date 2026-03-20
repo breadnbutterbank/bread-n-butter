@@ -28,39 +28,52 @@
     </div>
 
     <div class="input-area">
-      <input type="text" id="user-input" placeholder="Type a message..." />
+      <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off"/>
       <button id="send-btn">Send</button>
     </div>
   </div>
-  </div>
 
 <script>
-  // Simple chat simulation
   const chatBox = document.getElementById('chat-box');
   const userInput = document.getElementById('user-input');
   const sendBtn = document.getElementById('send-btn');
 
-  sendBtn.addEventListener('click', () => {
-    const msg = userInput.value.trim();
-    if (!msg) return;
-
-    // Add user message
-    const userMsg = document.createElement('div');
-    userMsg.classList.add('message', 'user');
-    userMsg.textContent = msg;
-    chatBox.appendChild(userMsg);
-
-    userInput.value = '';
+  function addMessage(text, sender) {
+    const msg = document.createElement('div');
+    msg.classList.add('message', sender);
+    msg.textContent = text;
+    chatBox.appendChild(msg);
     chatBox.scrollTop = chatBox.scrollHeight;
+  }
 
-    // Fake Jeff response
+  function getJeffReply(userMsg) {
+    const msg = userMsg.toLowerCase().trim();
+
+    if (msg === "how can i cut costs and still get coffee from starbucks every morning?") {
+      return "Try getting your coffee at Dunkin' Donuts instead, a Medium Iced Coffee is typically around $2.79–$3.39 at Dunkin', compared to $3.95+ at Starbucks.";
+    } else if (msg === "hey jeff.. i really need to save money but starbucks is just soo good") {
+      return "thats so real, i completely understand how good coffee is, maybe try dunkin donuts coffee? its cheaper than starbucks!";
+    } else {
+      return "I'm still learning! Thanks for your question: " + userMsg;
+    }
+  }
+
+  function sendMessage() {
+    const userMsg = userInput.value.trim();
+    if (!userMsg) return;
+
+    addMessage(userMsg, 'user');
+    userInput.value = '';
+
     setTimeout(() => {
-      const jeffMsg = document.createElement('div');
-      jeffMsg.classList.add('message', 'jeff');
-      jeffMsg.textContent = "I'm so sorry! This is a demo. So I cannot answer your question. Try saying "How can I cut costs and still get coffee from Starbucks every morning?"";
-      chatBox.appendChild(jeffMsg);
-      chatBox.scrollTop = chatBox.scrollHeight;
+      const reply = getJeffReply(userMsg);
+      addMessage(reply, 'jeff');
     }, 1000);
+  }
+
+  sendBtn.addEventListener('click', sendMessage);
+  userInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') sendMessage();
   });
 </script>
 
