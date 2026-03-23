@@ -154,7 +154,16 @@ button:hover {
   border-radius: 15px;
   border: 1px solid #ddd;
 }
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
 
+.footer a {
+  color: #a67c52;
+  text-decoration: none;
+}
 .input-area button {
   width: auto;
   margin-left: 10px;
